@@ -1,6 +1,6 @@
 #Crée les users
-New-ADUser -Name "admin_jarod.FR" -GivenName "Jarod" -Surname "Marie" -SamAccountName "admin_jarod" -UserPrincipalName "admin_jarod@fr.ASURMarieJarod.local" -AccountPassword (ConvertTo-SecureString -AsPlainText "admin_jm1" -Force)  -Enable $true -ChangePasswordAtLogon $true
-New-ADUser -Name "admin_dtrump.FR" -GivenName "Donald" -Surname "Trump" -SamAccountName "admin_dtrump" -UserPrincipalName "admin_dtrump@fr.ASURMarieJarod.local" -AccountPassword (ConvertTo-SecureString -AsPlainText "admin_dt1" -Force) -Enable $true -ChangePasswordAtLogon $true
+New-ADUser -Name "admin_jarod.FR" -GivenName "Jarod" -Surname "Marie" -SamAccountName "admin_jarod.FR" -UserPrincipalName "admin_jarod.FR@fr.ASURMarieJarod.local" -AccountPassword (ConvertTo-SecureString -AsPlainText "admin_jm1" -Force)  -Enable $true -ChangePasswordAtLogon $true
+New-ADUser -Name "admin_dtrump.FR" -GivenName "Donald" -Surname "Trump" -SamAccountName "admin_dtrump.FR" -UserPrincipalName "admin_dtrump.FR@fr.ASURMarieJarod.local" -AccountPassword (ConvertTo-SecureString -AsPlainText "admin_dt1" -Force) -Enable $true -ChangePasswordAtLogon $true
 Get-ADuser -Identity "admin_jarod.FR"
 Get-ADuser -Identity "admin_dtrump.FR"
 Pause
